@@ -17,7 +17,7 @@ print('started')
 
 
 
-@dp.message_handler(commands=['start'])
+@dp.message_handler(commands=["start", "help"])
 async def process_start_command(message: aiogram.types.Message):
     mycursor = mydb.cursor()
     sql = "SELECT * FROM users WHERE id = %s"
