@@ -1,0 +1,12 @@
+pyTelegramBotAPI==3.7.2
+
+Библиотеки:
+aiogram - pip install aiogram
+
+pymysql - pip install PyMySQL
+
+googletrans - pip install googletrans
+
+Таблица в базе данных:
+mycursor = mydb.cursor()
+mycursor.execute("CREATE TABLE user (id VARCHAR(255), lang VARCHAR(255))")
